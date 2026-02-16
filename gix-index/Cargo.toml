@@ -55,7 +55,7 @@ document-features = { version = "0.2.0", optional = true }
 #     "std",
 #     "fs",
 # ] }
-rustix = { git = "https://github.com/jackpot51/rustix.git", branch = "redox-makedev", default-features = false, features = [
+rustix = { git = "https://github.com/bytecodealliance/rustix.git", default-features = false, features = [
     "std",
     "fs",
 ] }
