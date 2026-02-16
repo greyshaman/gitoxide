@@ -30,7 +30,8 @@ gix-pack = { version = "^0.66.0", path = "../gix-pack", default-features = false
 gix-fs = { version = "^0.19.1", path = "../gix-fs" }
 serde = { version = "1.0.114", optional = true, default-features = false, features = ["derive"] }
 
-tempfile = "3.24.0"
+# tempfile = "3.24.0"
+tempfile = { git = "https://github.com/greyshaman/tempfile.git", branch = "use-fixed-rustix" }
 thiserror = "2.0.18"
 parking_lot = { version = "0.12.4" }
 arc-swap = "1.8.0"

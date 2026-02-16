@@ -1356,7 +1356,7 @@ dependencies = [
  "serde_json",
  "smallvec",
  "sysinfo",
- "tempfile",
+ "tempfile 3.24.0",
  "thiserror 2.0.18",
  "tracing",
  "tracing-forest 0.2.0",
@@ -1726,7 +1726,7 @@ dependencies = [
  "gix-testtools",
  "is_ci",
  "serial_test",
- "tempfile",
+ "tempfile 3.24.0",
  "thiserror 2.0.18",
 ]
 
@@ -1801,7 +1801,7 @@ dependencies = [
  "gix-utils",
  "is_ci",
  "serde",
- "tempfile",
+ "tempfile 3.24.0",
  "thiserror 2.0.18",
 ]
 
@@ -1920,7 +1920,7 @@ version = "21.0.1"
 dependencies = [
  "gix-tempfile",
  "gix-utils",
- "tempfile",
+ "tempfile 3.24.0",
  "thiserror 2.0.18",
 ]
 
@@ -2040,7 +2040,7 @@ dependencies = [
  "gix-quote",
  "parking_lot",
  "serde",
- "tempfile",
+ "tempfile 3.25.0",
  "thiserror 2.0.18",
 ]
 
@@ -2314,7 +2314,7 @@ dependencies = [
  "gix-path",
  "libc",
  "serde",
- "tempfile",
+ "tempfile 3.24.0",
  "windows-sys 0.61.2",
 ]
 
@@ -2404,7 +2404,7 @@ dependencies = [
  "parking_lot",
  "signal-hook 0.4.3",
  "signal-hook-registry",
- "tempfile",
+ "tempfile 3.25.0",
 ]
 
 [[package]]
@@ -2427,7 +2427,7 @@ dependencies = [
  "parking_lot",
  "serial_test",
  "tar",
- "tempfile",
+ "tempfile 3.24.0",
  "winnow",
  "xz2",
 ]
@@ -3067,7 +3067,7 @@ dependencies = [
  "console",
  "once_cell",
  "similar",
- "tempfile",
+ "tempfile 3.24.0",
 ]
 
 [[package]]
@@ -3543,7 +3543,7 @@ dependencies = [
  "schannel",
  "security-framework 2.11.1",
  "security-framework-sys",
- "tempfile",
+ "tempfile 3.24.0",
 ]
 
 [[package]]
@@ -4861,6 +4861,18 @@ dependencies = [
  "once_cell",
  "rustix 1.1.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "windows-sys 0.61.2",
+]
+
+[[package]]
+name = "tempfile"
+version = "3.25.0"
+source = "git+https://github.com/greyshaman/tempfile.git?branch=use-fixed-rustix#d285c6c7d5e06bf3ce27e3deceaf43c3a9e6309f"
+dependencies = [
+ "fastrand",
+ "getrandom 0.3.4",
+ "once_cell",
+ "rustix 1.1.3 (git+https://github.com/jackpot51/rustix.git?branch=redox-makedev)",
+ "windows-sys 0.52.0",
 ]
 
 [[package]]
